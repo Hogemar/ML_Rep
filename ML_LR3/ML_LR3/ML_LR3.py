@@ -1,4 +1,8 @@
-﻿from tkinter import *
+﻿'''
+ВЫВОДИТЬ КОЭФФИЦИЕНТЫ КОРРЕЛЯЦИИ И ДЕТЕРМИНАЦИИ
+'''
+
+from tkinter import *
 import matplotlib.pyplot as plt
 from sklearn import datasets, linear_model
 
@@ -37,6 +41,12 @@ def calc():
     regr.fit(X_train, y_train)
     # Получение значений y
     y_pred = regr.predict(X_test)
+    
+    import statistics
+    r = statistics.correlation(X_test, y_test)
+    print(f"Коэффициент корреляции = {r}")
+    print(f"Коэффициент детерминации = {r*r}")
+
     # Вывод картинки
     plt.scatter(X_test, y_test, color='purple', s=10)
     plt.plot(X_test, y_pred, color='black', linewidth=2)
@@ -45,6 +55,7 @@ def calc():
     plt.yticks(())
     plt.savefig('model.png')
     plt.show()
+    
 
 btn = Button(frame, text="Построить модель", command=calc)
 btn.grid(row=5, column=2)
