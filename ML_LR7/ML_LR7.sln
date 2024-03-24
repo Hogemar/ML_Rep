@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ML_LR7", "ML_LR7\ML_LR7.pyproj", "{29661231-F34D-4BE0-B748-38AE68E8F15B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29661231-F34D-4BE0-B748-38AE68E8F15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29661231-F34D-4BE0-B748-38AE68E8F15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3E52B0A-9A67-4401-8F84-0C025E3FF69A}
+	EndGlobalSection
+EndGlobal
